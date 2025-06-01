@@ -5,7 +5,8 @@ export PATH := $(PATH):$(GOPATH)/bin
 
 INSTALL := /usr/bin/install
 DBDIR := /var/run/redis/sonic-db/
-GO ?= /usr/local/go/bin/go
+#GO ?= /usr/local/go/bin/go
+GO ?= /snap/bin/go
 TOP_DIR := $(abspath ..)
 MGMT_COMMON_DIR := $(TOP_DIR)/sonic-mgmt-common
 BUILD_DIR := build/bin
